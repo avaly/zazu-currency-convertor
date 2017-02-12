@@ -1,0 +1,36 @@
+{
+  "name": "zazu-currency-convertor",
+  "version": "1.0.0",
+  "description": "Zazu Curreny Convertor",
+  "author": {
+    "name": "Valentin Agachi",
+    "url": "http://agachi.name/"
+  },
+  "main": "zazu.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avaly/zazu-currency-convertor.git"
+  },
+  "keywords": [
+    "zazu",
+    "currency",
+    "convertor",
+    "money"
+  ],
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jest": "^18.1.0",
+    "nock": "^9.0.5"
+  }
+}

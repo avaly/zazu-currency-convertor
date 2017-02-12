@@ -1,0 +1,35 @@
+{
+  "name": "zazu-currency-convertor",
+  "version": "1.0.0",
+  "description": "Zazu Currency Convertor",
+  "blocks": {
+    "input": [
+      {
+        "id": "currency",
+        "type": "PrefixScript",
+        "prefix": "currency",
+        "space": true,
+        "args": "Required",
+        "script": "src/convertor.js",
+        "connections": ["notification"]
+      },
+      {
+        "id": "money",
+        "type": "PrefixScript",
+        "prefix": "money",
+        "space": true,
+        "args": "Required",
+        "script": "src/convertor.js",
+        "connections": ["notification"]
+      }
+    ],
+    "output": [
+      {
+        "id": "notification",
+        "type": "SendNotification",
+        "title": "Currency",
+        "message": "{value}"
+      }
+    ]
+  }
+}
