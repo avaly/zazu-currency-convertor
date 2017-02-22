@@ -28,6 +28,8 @@ describe('utils', () => {
       ['usd in sek', { amount: 1, from: 'USD', to: 'SEK' }],
       ['gbp eur', { amount: 1, from: 'GBP', to: 'EUR' }],
       ['123 eur to NZD', { amount: 123, from: 'EUR', to: 'NZD' }],
+      ['usd/eur', { amount: 1, from: 'USD', to: 'EUR' }],
+      ['usd | eur', { amount: 1, from: 'USD', to: 'EUR' }],
       ['sad', null],
       ['now to', null],
       ['eur in us', null],

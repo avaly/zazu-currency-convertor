@@ -13,6 +13,7 @@ Examples:
 - `currency 100 USD to GBP`
 - `money 200 SEK in EUR`
 - `money USD EUR`
+- `money EUR/USD`
 
 ### Install
 

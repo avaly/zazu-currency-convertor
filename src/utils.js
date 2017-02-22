@@ -30,7 +30,7 @@ const createMatrix = () => {
 module.exports = {
   parse(query) {
     const match = query.match(
-      /^(\d+)?\s*([a-z]{3})\s+((in|to)\s+)?([a-z]{3})$/i
+      /^(\d+)?\s*([a-z]{3})(\s+((in|to)\s+)?|\s*[^a-z0-9\s]\s*)([a-z]{3})$/i
     );
     if (!match) {
       return null;
@@ -39,7 +39,7 @@ module.exports = {
     const parsed = {
       amount: 1,
       from: match[2].toUpperCase(),
-      to: match[5].toUpperCase(),
+      to: match[6].toUpperCase(),
     };
     if (match[1]) {
       parsed.amount = parseInt(match[1], 10);
