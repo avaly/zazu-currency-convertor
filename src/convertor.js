@@ -20,7 +20,7 @@ module.exports = (pluginContext) => {
           resolve([
             {
               icon: 'fa-money',
-              title: `Currency Convertor: ${query}`,
+              title: `Currency Convertor: ${value}`,
               subtitle: 'Use ISO currency identifiers (e.g. USD, EUR, GBP)',
               value: value,
             },
