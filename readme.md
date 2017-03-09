@@ -1,5 +1,7 @@
 ## Zazu Currency Convertor
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/avaly/zazu-currency-convertor.svg)](https://greenkeeper.io/)
+
 A simple [zazu](http://zazuapp.org/) plugin which converts currencies.
 
 ### Usage
